@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read input from the user
+read -p "Enter a string: " input_string
+
+# Remove all occurrences of 'c' and 'C'
+result=$(echo "$input_string" | tr -d 'cC')
+
+# Print the result
+echo "Result: $result"
